@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+header {
+    background-color: rgb(187, 136, 255);
+}
+h1 {
+    font-family: 'Stick No Bills', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}

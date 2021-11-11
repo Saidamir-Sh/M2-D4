@@ -14,18 +14,18 @@
     <link rel="stylesheet" href="M2-D4_files/bootstrap.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   </head>
   <body>
-    <header>
+    <header class="w-100 pb-2 pt-2">
       <h1>Team Generator</h1>
     </header>
 
-    <div class="board">
-      <div class="container w-25">
+    <div class="input-form w-100 mt-5">
+      <div class="container w-50">
         <div class="row flex-column">
           <div class="col">
            <div class="input-group mb-3">
               <input type="text" class="form-control name" placeholder="Participant's name" aria-label="Recipient's username" aria-describedby="button-addon2">
             <div class="input-group-append">
-              <button class="btn btn-outline-secondary" type="button" id="button-addon2">Add member</button>
+              <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="addNamesList()">Add member</button>
             </div>
             </div>
           </div>
@@ -38,8 +38,29 @@
             </div>
           </div>
         </div>
+      </div> 
+    </div>
+
+    <div class="board container w-50 mt-5 mx-auto">
+      <div class="row justify-content-around">
+        <div class="col-3">
+          <h5>List of Names</h5>
+          <ul class="name-list">
+            <li>Name</li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <h5>List of Teams</h5>
+          <ul class="team-list">
+            <li>Teams</li>
+          </ul>
+        </div>
       </div>
-     
+    </div>
+
+    <div class="w-25 mx-auto">
+        <button class="btn btn-primary">Assign</button>
+        <button class="btn btn-primary">Reset</button>
     </div>
     
     
