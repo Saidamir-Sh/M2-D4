@@ -35,13 +35,13 @@ const takeNumTeams = function() {
     
     for (let i = 1; i <= teamNumberValue; i++) {
 
-        let teamHeader = document.createElement('p')
+        let teamHeader = document.createElement('li')
         teamHeader.innerText = `Team ${i}`
         teamListNode.appendChild(teamHeader)
         teamNumberNode.value = " "
 
         teamNumArr.push(`team${i}`)
-        console.log(teamNumArr)
+        
 
     }
     return teamNumberValue
@@ -51,6 +51,11 @@ const takeNumTeams = function() {
 const assignTeams = function() {
     let oneName = document.querySelectorAll('.name-list li')
     let randomNumName = Math.floor(Math.random() * namesArr.length)
-    console.log(oneName)
+    let oneTeam = document.querySelectorAll('.team-list li')
+    let randomNumTeam = Math.floor(Math.random() * oneTeam.length)
+
+    let teamMember = document.createElement('small')
+    teamMember.innerText = oneName[randomNumName].innerText
+    oneTeam[randomNumTeam].appendChild(teamMember)
 
 }

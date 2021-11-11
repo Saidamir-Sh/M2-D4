@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 * {
     box-sizing: border-box;
 }
@@ -13,8 +14,17 @@ ul li {
     list-style: none;
     text-transform: capitalize;
 }
+.team-list li {
+    border-bottom: .5px solid grey;
+}
 .fa-trash-alt {
     margin-left: .7em;
     color: #df4759;
     cursor: pointer;
+}
+p {
+    font-family: 'Poppins', sans-serif;
+}
+small {
+    display: block;
 }
