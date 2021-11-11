@@ -9,3 +9,12 @@ h1 {
     font-weight: bold;
     text-align: center;
 }
+ul li {
+    list-style: none;
+    text-transform: capitalize;
+}
+.fa-trash-alt {
+    margin-left: .7em;
+    color: #df4759;
+    cursor: pointer;
+}
