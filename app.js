@@ -17,6 +17,18 @@ const addNamesList = function() {
     newNameList.innerText = nameValue
     nameListNode.appendChild(newNameList)
     nameInputNode.value = " "
+    namesArr.push(nameValue)
+
+    }
+}
+
+const takeNumTeams = function() {
+    let teamNumberValue = teamNumberNode.value
     
+    for (let i = 1; i <= teamNumberValue; i++) {
+        let teamHeader = document.createElement('p')
+        teamHeader.innerText = `Team ${i}`
+        teamListNode.appendChild(teamHeader)
+        teamNumberNode.value = " "
     }
 }

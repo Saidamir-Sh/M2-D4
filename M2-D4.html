@@ -4,6 +4,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
@@ -33,7 +35,7 @@
             <div class="input-group mb-3">
               <input type="number" class="form-control team" placeholder="Number of Teams" aria-label="Recipient's username" aria-describedby="button-addon2">
             <div class="input-group-append">
-              <button class="btn btn-outline-secondary" type="button" id="button-addon2">Add teams</button>
+              <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="takeNumTeams()" >Add teams</button>
             </div>
             </div>
           </div>
@@ -42,25 +44,25 @@
     </div>
 
     <div class="board container w-50 mt-5 mx-auto">
-      <div class="row justify-content-around">
+      <div class="row justify-content-between mx-auto">
         <div class="col-3">
           <h5>List of Names</h5>
           <ul class="name-list">
-            <li>Name</li>
+
           </ul>
         </div>
         <div class="col-3">
           <h5>List of Teams</h5>
           <ul class="team-list">
-            <li>Teams</li>
+            
           </ul>
         </div>
       </div>
     </div>
 
-    <div class="w-25 mx-auto">
-        <button class="btn btn-primary">Assign</button>
-        <button class="btn btn-primary">Reset</button>
+    <div class="w-25 mx-auto d-flex flex-column justify-content-center align-items-center position-absolute fixed-bottom pb-2">
+        <button class="btn btn-primary w-50 mb-2">Assign</button>
+        <button class="btn btn-success w-50">Reset</button>
     </div>
     
     
